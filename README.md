@@ -1,8 +1,8 @@
-# Llama3.2 Chatbot Glud Test
+# Gemma2 Chatbot Glud Test
 Testing llama 3.2 chatbot with 1b and 3b parameters about glud website
 
 1. Go to Ollama website and download it
-2. Install Llama3.2 1b and 3b models using `ollama pull llama3.2:1b` and `ollama pull llama3.2:3b`
+2. Install Gemma2 2b model using `ollama pull gemma2:2b`
 3. Create a virtual enviroment and install `streamlit` and `langchain_community` libraries
 4. Execute `streamlit run app.py`
 
@@ -11,16 +11,16 @@ Ejemplo de datos de entrenamiento en formato JSON:
 ```
 [
     {
-        "prompt": "¿Cuántos casos de hurto a personas se registraron en Bogotá entre enero y septiembre de 2024?",
-        "completion": "En Bogotá se registraron 99,194 casos de hurto a personas entre enero y septiembre de 2024."
+        "prompt": "¿Qué es GLUD?",
+        "completion": "GLUD es el Grupo Linux de la Universidad Distrital, una comunidad que promueve el uso de GNU/Linux y el software libre en la universidad y la sociedad."
     },
     {
-        "prompt": "¿Cómo se compara el hurto a personas en Bogotá en 2024 con el mismo periodo en 2023?",
-        "completion": "En 2024, hubo una disminución del 17.7% en los casos de hurto a personas en Bogotá en comparación con el mismo periodo en 2023."
+        "prompt": "¿Qué es el curso de Gnubies?",
+        "completion": "El curso de Gnubies es una formación ofrecida por GLUD que abarca desde conceptos básicos hasta avanzados de GNU/Linux. Incluye temas como la historia del software libre, instalación de GNU/Linux, administración desde la terminal, automatización con scripts, editores de texto y programación, control de versiones con Git y uso de contenedores."
     },
     {
-        "prompt": "¿El hurto a personas sigue siendo un delito frecuente en Bogotá en 2024?",
-        "completion": "Sí, a pesar de una reducción general en 2024, el hurto a personas sigue siendo uno de los delitos más frecuentes en Bogotá."
+        "prompt": "¿Qué es el software libre?",
+        "completion": "El software libre es aquel que respeta la libertad de los usuarios para ejecutar, estudiar, modificar y distribuir el programa. Promueve una cultura abierta y colaborativa, permitiendo que cualquiera participe en la creación y mejora de la tecnología."
     }
 ]
 ```
