@@ -3,14 +3,25 @@ from langchain_community.llms import Ollama
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
-llm = Ollama(model="llama3.2:1b")
+llm = Ollama(model="gemma2:2b")
 
 def main():
     if "chat_history" not in st.session_state:
         st.session_state["chat_history"] = []
 
-    st.title("Prueba Llama3.2 1b")
-    bot_desc = st.text_area("Descripción", value="Eres Normal y hablas español")
+    # Data upload
+    with open("new-data.txt", "r", encoding="utf-8") as file:
+        data = file.read()
+    data = data.split("\n")
+    data_description = ""
+    for data_ in data:
+        data_description += data_ + "\n"
+    
+    # Warning
+    #data_description = ""
+
+    st.title("Prueba gemma2 2b")
+    bot_desc = st.text_area("Descripción", value="Soy un bot encargado de dar recomendaciones de seguridad con respecto a los hurtos en Bogotá, das datos númericos y porcentuales de tu base de datos para concientizar a la población teniendo en cuenta la siguiente información:\n" + data_description)
 
     prompt_template = ChatPromptTemplate.from_messages(
         [
