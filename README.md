@@ -1,5 +1,5 @@
 # Gemma2 Chatbot Glud Test
-Testing llama 3.2 chatbot with 1b and 3b parameters about glud website
+Testing Gemma2 chatbot with 2b parameters about GLUD (Grupo Linux Universidad Distrital)
 
 1. Go to Ollama website and download it
 2. Install Gemma2 2b model using `ollama pull gemma2:2b`
