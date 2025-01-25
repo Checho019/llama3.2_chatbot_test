@@ -47,6 +47,8 @@ def main():
             st.session_state["chat_history"].append(AIMessage(content=response))
 
     chat_display = ""
+    if "chat_history" not in st.session_state:
+        return 
     for msg in st.session_state["chat_history"]:
         if isinstance(msg, HumanMessage):
             chat_display += f"👦 Humano: {msg.content} \ "
