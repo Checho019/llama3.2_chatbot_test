@@ -24,3 +24,5 @@ Ejemplo de datos de entrenamiento en formato JSON:
     }
 ]
 ```
+## requirement
+Python: 3.13.0
