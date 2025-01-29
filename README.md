@@ -6,6 +6,10 @@ Testing Gemma2 chatbot with 2b parameters about GLUD (Grupo Linux Universidad Di
 3. Create a virtual enviroment and install `streamlit` and `langchain_community` libraries
 4. Execute `streamlit run app.py`
 
+## Architecture
+![image](https://github.com/user-attachments/assets/cd1e8392-f5d9-424c-8138-9c15432ca893)
+
+<vr>
 Gemma2:2b seems to be better for low computacional cost conversation. <br>
 Ejemplo de datos de entrenamiento en formato JSON:
 ```
